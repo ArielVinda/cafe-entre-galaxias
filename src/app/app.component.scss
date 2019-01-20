@@ -42,17 +42,20 @@ nav{
           position: absolute;
           display: block;
           width:0%;
-          height: 3px;
-          border-radius: 1px;
+          height: 4px;
+          border-radius: 2px;
           background-color: $purple;
-          left:0;
-          transition: all .5s;
+          left:50%;
+          transform: translateX(-50%);
         }
         &::before{
           top: 4px;
+          transition: all .3s;
         }
         &::after{
           bottom: 4px;
+          transition: all .2s ;
+          transition-delay: 0.1s;
         }
         &:hover{
           width: 120px;
